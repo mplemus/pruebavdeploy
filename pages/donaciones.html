@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Donaciones - Transportes Palacios</title>
+  <link rel="stylesheet" href="/Less/style.less">
+  <script src="/js/validacionesDona.js"></script>
+  <script src="/js/menu.js"></script>
+
+</head>
+
+<body>
+  {{>header}}
+  <main>
+    <section class="info1">
+      <h2>¿Por qué donar?</h2>
+      <p>
+        Las donaciones que recibimos se destinan a apoyar a comunidades desfavorecidas en nuestra zona.
+        Con tu ayuda, podemos proporcionar alimentos, refugio, educación y atención médica a aquellos que más lo
+        necesitan.
+        En nuestra empresa, entendemos que nuestro propósito va más allá de simplemente transportar.
+        Es un compromiso con el bienestar de aquellos que nos rodean.
+        Es por eso que nos enorgullece anunciar que hemos decidido implementar un sistema de donaciones en nuestra
+        página web.
+      </p>
+      </div>
+    </section>
+    <section class="info2">
+      <br>
+      <h2>¿A dónde van esas donaciones? </h2>
+      <p> Van a lugares donde la necesidad es más profunda, donde una pequeña ayuda puede marcar la diferencia
+        entre la desesperación y la esperanza. Desde la construcción de hogares para aquellos que lo han perdido todo
+        hasta
+        restauración de áreas naturales dañadas, cada donación se dirige a proyectos que tienen un impacto positivo y
+        duradero
+        en nuestras vidas y en el mundo que compartimos.Nos comprometemos a ser transparentes en nuestras acciones y a
+        garantizar
+        que cada centavo donado se utilice de manera efectiva y responsable. Porque sabemos que la confianza que
+        depositan en nosotros al contribuir es sagrada, y la honramos con cada paso que damos. </p>
+    </section>
+
+    <div class="tarjeta">
+      <div class="contacto form">
+        <h3>Envía un Mensaje</h3>
+        <form action="" method="get" id="contactForm">
+          <div class="cajaform">
+            <div class="row50">
+              <div class="cajainput">
+                <span>Nombre</span>
+                <input type="text" name="txtNombre" id="txtNombre" placeholder="Andres" required>
+              </div>
+              <div class="cajainput">
+                <span>Apellido</span>
+                <input type="text" name="txtApellido" id="txtApellido" placeholder="Castro" required>
+              </div>
+            </div>
+
+            <div class="row50">
+              <div class="cajainput">
+                <span>Correo</span>
+                <input type="email" name="txtCorreo" id="txtCorreo" placeholder="ejemplo@email.com" required>
+              </div>
+              <div class="cajainput">
+                <span>Teléfono</span>
+                <input type="tel" name="txtTelefono" id="txtTelefono" placeholder="1234-5678" required>
+              </div>
+            </div>
+
+            <div class="row100">
+              <div class="cajainput">
+                <span>Cantidad a donar</span>
+                <input type="number" name="txtCantidad" id="txtCantidad" min="1" required>
+              </div>
+            </div>
+
+            <div class="row100">
+              <div class="cajainput">
+                <span>Mensaje</span>
+                <textarea name="txtMen" id="txtMen" placeholder="Escribe tu mensaje aquí..." required></textarea>
+              </div>
+            </div>
+
+            <div class="row100">
+              <div class="cajainput">
+                <button type="button" id="btnProcesar">Donar</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </main>
+  {{>footer}}
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+<section class="ultimo">
+    <h2 class="titulo">FAQ - Preguntas Frecuentes</h2>
+    <div class="preguntas-container">
+        <div class="preguntas">
+            {{#with preguntas}}
+            {{#each this}}
+            <button>
+                <span>{{pregunta}}</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>{{respuesta}}</p>
+            {{/each}}
+            {{/with}}
+        </div>
+    </div>
+</section>

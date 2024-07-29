@@ -1,0 +1,156 @@
+header {
+  position: relative;
+  padding: 0 2rem;
+  background-color: @secondary-color;
+  z-index: 1001;
+  .navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+  .links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    li {
+      list-style: none;
+      a {
+        text-decoration: none;
+        color: @primary-color;;
+        font-size: @font-size-hf;
+        text-align: center;
+
+        &:hover {
+          color: @fourth-color;
+        }
+      }
+    }
+  }
+
+  .toggle_btn {
+    color: @third-color;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+  }
+
+  .dropdown_menu {
+    display: none;
+    position: absolute;
+    left: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background-color: #5c85b1;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    li {
+      position: relative;
+      padding: 0.7rem;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid @fifth-color;
+      text-align: center;
+      a{
+        text-decoration: none;
+        color: @primary-color;;
+        display: block;
+      }
+    }
+
+    &.open {
+      height: auto;
+      width: 200px;
+    }
+  }
+
+  .nav-link {
+    color: @primary-color;
+    text-decoration: none;
+
+    &.active {
+      color: #00FFFF;
+      font-weight: bold;
+    }
+  }
+
+  @media (max-width: 767px) {
+    header .navbar{
+      justify-content: start;
+    }
+
+    .navbar .links,
+    .navbar {
+      display: none;
+    }
+
+    .navbar .toggle_btn {
+      display: block;
+      z-index: 1001;
+      color: @primary-color;
+    }
+
+    .dropdown_menu {
+      display: block;
+    }
+  }
+
+  @media (max-width: 576px){
+    header .navbar{
+      justify-content: start;
+    }
+    .dropdown_menu{
+      left: 2rem;
+      width: unset;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

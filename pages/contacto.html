@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Contacto - Transportes Palacios</title>
+  <link rel="stylesheet" href="/Less/style.less" />
+  <script src="/js/validacionesform.js"></script>
+  <script src="/js/menu.js"></script>
+</head>
+
+<body>
+  {{>header}}
+  <main>
+    <div class="contactenos">
+      <div class="tituloo">
+        <h2>Contactenos</h2>
+      </div>
+      <div class="caja">
+        <!--Formulario-->
+        <div class="contacto form">
+          <h3>Envía un Mensaje</h3>
+          <form action="" method="get" id="contactForm">
+            <div class="cajaform">
+              <div class="row50">
+                <div class="cajainput">
+                  <span>Nombre</span>
+                  <input type="text" name="txtNombre" id="txtNombre" placeholder="Andres" />
+                </div>
+                <div class="cajainput">
+                  <span>Apellido</span>
+                  <input type="text" name="txtApellido" id="txtApellido" placeholder="Castro" />
+                </div>
+              </div>
+
+              <div class="row50">
+                <div class="cajainput">
+                  <span>Correo</span>
+                  <input type="email" name="txtCorreo" id="txtCorreo" placeholder="ejemplo@email.com" />
+                </div>
+                <div class="cajainput">
+                  <span>Telefono</span>
+                  <input type="tel" name="txtTelefono" id="txtTelefono" placeholder="1234-5678" />
+                </div>
+              </div>
+
+              <div class="row100">
+                <div class="cajainput">
+                  <span>Mensanje</span>
+                  <textarea name="txtMen" id="txtMen" placeholder="Escribe tu mensaje aqui..."></textarea>
+                </div>
+              </div>
+
+              <div class="row100">
+                <div class="cajainput">
+                  <button type="button" id="btnProcesar">Enviar</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!--Caja Info-->
+        <div class="contacto info">
+          <h3>Info de Contacto</h3>
+          <div class="cajainfo">
+            <div>
+              <span><ion-icon name="location"></ion-icon></span>
+              <p>Taulabe, Comayagua <br />HONDURAS</p>
+            </div>
+            <div>
+              <span><ion-icon name="mail"></ion-icon></span>
+              <a href="mailto:ejemplo2@email.com">hpalacioseuceda@gmail.com</a>
+            </div>
+            <div>
+              <span><ion-icon name="call"></ion-icon></span>
+              <a href="tel:+50496940930">+504 9694-0930</a>
+            </div>
+            <!--Links Redes Sociales -->
+            <ul class="sci">
+              <li>
+                <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+              </li>
+              <li>
+                <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+              </li>
+              <li>
+                <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+              </li>
+              <li>
+                <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="contacto map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3859.3306750294223!2d-87.97015162489203!3d14.693882685803585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTTCsDQxJzM4LjAiTiA4N8KwNTgnMDMuMyJX!5e0!3m2!1ses!2shn!4v1712737147167!5m2!1ses!2shn"
+            style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </main>
+  {{>footer}}
+   
+</body>
+
+</html>

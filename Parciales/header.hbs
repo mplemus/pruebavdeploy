@@ -1,0 +1,21 @@
+<header>
+    <div class="navbar">
+        <ul class="links">
+            {{#with header}}
+                {{#each this}}
+                <li><a href="{{url}}" class="nav-link">{{item}}</a></li>
+                {{/each}}
+            {{/with}}
+        </ul>
+        <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+    </div>
+    <div class="dropdown_menu">
+        <ul>
+            {{#with header}}
+                {{#each this}}
+                <li><a href="{{url}}" class="nav-link">{{item}}</a></li>
+                {{/each}}
+            {{/with}}
+        </ul>
+    </div>
+</header>
