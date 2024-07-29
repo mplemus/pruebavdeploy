@@ -7,7 +7,7 @@ import handlebars from 'vite-plugin-handlebars';
 import handlerBarsContext from './Data';
 
 export default defineConfig({
-    //base: "/examen-segundo-parcial/",
+    base: "/pruebavdeploy/",
     appType: 'mpa',
     build: {
         rollupOptions: {
@@ -23,10 +23,10 @@ export default defineConfig({
     },
     plugins: [
         handlebars({
-            partialDirectory: resolve(__dirname, 'parciales'),
+            partialDirectory: resolve(__dirname, 'Parciales'),
             context: handlerBarsContext,
         }),
         htmlPurge({}),
         ViteMinifyPlugin({}),
     ]
-})
+});
