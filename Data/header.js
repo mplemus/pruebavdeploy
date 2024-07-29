@@ -6,39 +6,39 @@ const header = {
         },
         {
             item: "Nosotros",
-            url: "/pages/acercade.html"
+            url: "/acercade.html"
         },
         {
             item: "Programas",
-            url: "/pages/programas.html"
+            url: "/programas.html"
         },
         {
             item: "Experiencia",
-            url: "/pages/Experiencia.html"
+            url: "/Experiencia.html"
         },
         {
             item: "Galeria",
-            url: "/pages/galeria.html"
+            url: "/galeria.html"
         },
         {
             item: "Blog",
-            url: "/pages/blog.html"
+            url: "/blog.html"
         },
         {
             item: "Eventos",
-            url: "/pages/eventos.html"
+            url: "/eventos.html"
         },
         {
             item: "Contacto",
-            url: "/pages/contacto.html"
+            url: "/contacto.html"
         },
         {
             item: "Donaciones",
-            url: "/pages/donaciones.html"
+            url: "/donaciones.html"
         },
         {
             item: "FAQ",
-            url: "/pages/preguntas.html"
+            url: "/preguntas.html"
         }
     ]
 };
